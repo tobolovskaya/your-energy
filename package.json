@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/your-energy/",
+    "deploy": "gh-pages -d dist",
+    "homepage": "https://tobolovskaya.github.io/your-energy/",
     "preview": "vite preview"
   },
   "devDependencies": {
