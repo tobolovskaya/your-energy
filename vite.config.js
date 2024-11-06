@@ -5,6 +5,7 @@ import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig({
   root: 'src',
+  base: '/your-energy/',
   build: {
     rollupOptions: {
       input: glob.sync('./src/*.html'),
