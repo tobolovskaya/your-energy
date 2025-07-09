@@ -1,4 +1,4 @@
-import{A as ee,i as U,a as Me}from"./05-modal-exercises-367cf8d9.js";const Be=new ee,J=document.querySelector(".js-list"),re=document.getElementById("pagination-numbers");let M=1;te("Muscles",M);async function te(i,a){try{const{results:d,totalPages:l}=await Be.getFilter(i,a);Oe({results:d,totalPages:l}),Ne(d)}catch(d){console.log(d)}}function Ne(i){J.innerHTML="";const a=i.map(({filter:d,name:l,imgURL:n})=>`
+import{A as ee,i as U,a as Me}from"./05-modal-exercises-5d546d26.js";const Be=new ee,J=document.querySelector(".js-list"),re=document.getElementById("pagination-numbers");let M=1;te("Muscles",M);async function te(i,a){try{const{results:d,totalPages:l}=await Be.getFilter(i,a);Oe({results:d,totalPages:l}),Ne(d)}catch(d){console.log(d)}}function Ne(i){J.innerHTML="";const a=i.map(({filter:d,name:l,imgURL:n})=>`
   <li class="filters__item">
     <img class="filters__img-first" src="${n}"></img>
     <div class="filters__wrapper-first">
