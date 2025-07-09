@@ -3,7 +3,8 @@ import icons from '../img/sprite.svg';
 const localFavorite = document.querySelector('.favorites__list');
 const buttonFavorite = document.getElementById('favoritesButton');
 
-buttonFavorite.addEventListener('click', renderFavorite());
+// the handler should be passed as a reference
+buttonFavorite.addEventListener('click', renderFavorite);
 
 export function renderFavorite() {
   const local = JSON.parse(localStorage.getItem('exerciseData'));
